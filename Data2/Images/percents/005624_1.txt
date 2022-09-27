@@ -1,3 +1,0 @@
-62.14%: vegetation
-24.16%: road
-13.7%: terrain

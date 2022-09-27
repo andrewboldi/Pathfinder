@@ -1,5 +1,0 @@
-23.77%: sky
-30.4%: vegetation
-31.64%: road
-13.99%: terrain
-0.2%: pole

@@ -1,5 +1,0 @@
-0.09%: bus
-0.09%: sky
-60.28%: vegetation
-24.82%: road
-14.73%: terrain

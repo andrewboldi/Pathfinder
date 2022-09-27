@@ -1,4 +1,0 @@
-45.82%: sky
-10.27%: wall
-0.07%: vegetation
-43.84%: road

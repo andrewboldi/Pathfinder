@@ -1,4 +1,0 @@
-10.37%: car
-51.04%: vegetation
-37.51%: road
-1.09%: sidewalk

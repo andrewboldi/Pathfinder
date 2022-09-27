@@ -1,4 +1,0 @@
-2.68%: bus
-2.9%: building
-85.06%: sky
-9.36%: road

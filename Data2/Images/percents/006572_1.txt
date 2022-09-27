@@ -1,7 +1,0 @@
-27.67%: sky
-27.27%: vegetation
-28.31%: road
-11.43%: terrain
-0.04%: pole
-3.09%: fence
-2.19%: sidewalk

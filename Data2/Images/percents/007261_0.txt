@@ -1,4 +1,0 @@
-15.09%: sky
-44.34%: vegetation
-40.41%: road
-0.17%: terrain

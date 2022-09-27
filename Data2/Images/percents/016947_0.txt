@@ -1,5 +1,0 @@
-0.04%: car
-35.63%: sky
-25.32%: vegetation
-38.64%: road
-0.37%: terrain
