@@ -11,7 +11,8 @@ images = sorted(images)
 ignore = os.listdir("../../../Data/Images/percents/")
 colorkey = loads(open("colorkey.txt").read())
 
-for image in tqdm.tqdm(images):
+for i in tqdm.tqdm(range(2, len(images), 8)):
+    image = images[i]
     if image.replace("png", "txt") in ignore:
         continue
     gsv = img.imread(f"../../../Data/Images/masks/{image}", format="JPG")
