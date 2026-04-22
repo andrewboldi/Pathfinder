@@ -1,5 +1,0 @@
-tqdm
-mmsegmentation
-mmcls
-mmcv
-mmcv-full

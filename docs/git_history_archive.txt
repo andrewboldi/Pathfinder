@@ -1,0 +1,138 @@
+=== COMMIT f879f9014e17f6a0494bf1aa96008f19c3ee661d ===\nDate: 2026-04-13 22:52:55 -0700\nAuthor: Andrew Boldi <andrewjboldi@gmail.com>\nMessage: changes...\n
+
+ ...122.259495,37.510632,-122.272782,0.4,0.7,10.txt |   1 +
+ ...-122.290227,37.483336,-122.251249,0.5,0.5,3.txt |   1 +
+ ...-122.290227,37.504263,-122.266869,0.5,0.5,3.txt |   1 +
+ ...,-122.308576,37.561886,-122.3522,0.4,0.5,10.txt |   1 +
+ ...8,-122.308576,37.561886,-122.3522,0.4,0.5,2.txt |   1 +
+ ...-122.307948,37.564433,-122.348678,0.4,0.4,2.txt |   1 +
+ ...-122.30976,37.449949,-122.260339,0.3,0.7,20.txt |   1 +
+ ...-122.30976,37.449949,-122.260339,0.5,0.7,10.txt |   1 +
+ ...-122.304806,37.503763,-122.268953,0.5,0.5,5.txt |   1 +
+ Pathfinder/Percolation/main.py                     |  27 +-
+ Pathfinder/Percolation/old.py                      | 539 +++++++++++++++++++++
+ ..._37.517932,-122.30976_37.449949,-122.260339.png | Bin 6344180 -> 6330522 bytes
+ ..._37.517932,-122.30976_37.449949,-122.260339.png | Bin 6324423 -> 6323632 bytes
+ ...37.521666,-122.304806_37.503763,-122.268953.png | Bin 0 -> 6314067 bytes
+ important.txt                                      |   2 +
+ main.py                                            | 539 +++++++++++++++++++++
+ ...37.493343,-122.259495_37.510632,-122.272782.png | Bin 0 -> 6312809 bytes
+ ...n_37.538288,-122.308576_37.561886,-122.3522.png | Bin 0 -> 6314593 bytes
+ ...37.539832,-122.307948_37.564433,-122.348678.png | Bin 0 -> 6313499 bytes
+ ...37.513302,-122.290227_37.483336,-122.251249.png | Bin 0 -> 6315125 bytes
+ ...37.513302,-122.290227_37.504263,-122.266869.png | Bin 0 -> 6312893 bytes
+ requirements.txt                                   |   9 +-
+ 22 files changed, 1117 insertions(+), 8 deletions(-)
+=== COMMIT 2b86996fcd98f9c1fd0bc8eb0858ead1a046dbeb ===\nDate: 2024-12-24 14:16:40 -0800\nAuthor: Polydynamical <cbracketdash@gmail.com>\nMessage: uh\n
+
+ .gitignore                                         |     5 +
+ Explore/Locations/parks.csv                        |   164 +
+ Explore/README.md                                  |     5 +
+ Navigate/Depth/dense_net/README.md                 |     1 +
+ Navigate/Depth/dense_net/my_examples/000000_0.png  |   Bin 0 -> 41884 bytes
+ Navigate/Depth/dense_net/my_examples/000000_1.png  |   Bin 0 -> 46738 bytes
+ Navigate/Depth/dense_net/my_examples/000001_0.png  |   Bin 0 -> 43334 bytes
+ Navigate/Depth/dense_net/my_examples/000001_1.png  |   Bin 0 -> 44979 bytes
+ Navigate/Depth/dense_net/my_examples/000002_0.png  |   Bin 0 -> 43883 bytes
+ Navigate/Depth/dense_net/my_examples/000002_1.png  |   Bin 0 -> 43816 bytes
+ Navigate/Depth/dense_net/my_examples/000003_0.png  |   Bin 0 -> 35758 bytes
+ Navigate/Depth/dense_net/my_examples/000003_1.png  |   Bin 0 -> 38933 bytes
+ Navigate/Depth/dense_net/my_examples/000004_0.png  |   Bin 0 -> 32733 bytes
+ Navigate/Depth/dense_net/my_examples/000004_1.png  |   Bin 0 -> 35811 bytes
+ Navigate/Depth/dense_net/my_examples/000005_0.png  |   Bin 0 -> 35973 bytes
+ Navigate/Depth/dense_net/my_examples/000005_1.png  |   Bin 0 -> 33405 bytes
+ Navigate/Depth/dense_net/my_examples/000006_0.png  |   Bin 0 -> 38169 bytes
+ Navigate/Depth/dense_net/my_examples/000006_1.png  |   Bin 0 -> 38226 bytes
+ Navigate/Depth/dense_net/my_examples/000007_0.png  |   Bin 0 -> 33525 bytes
+ Navigate/Depth/dense_net/my_examples/000007_1.png  |   Bin 0 -> 35715 bytes
+ Navigate/Depth/dense_net/my_examples/000008_0.png  |   Bin 0 -> 33378 bytes
+ Navigate/Depth/dense_net/my_examples/000008_1.png  |   Bin 0 -> 35982 bytes
+ Navigate/Depth/dense_net/my_examples/000009_0.png  |   Bin 0 -> 40953 bytes
+ Navigate/Depth/dense_net/my_examples/000009_1.png  |   Bin 0 -> 49663 bytes
+ Navigate/Depth/dense_net/test.py                   |   180 +
+ Navigate/Depth/gsvpanojs/GSVPanoDepth.js           |   188 +
+ Navigate/Depth/gsvpanojs/jquery.base64.min.js      |     1 +
+ Navigate/Depth/gsvpanojs/jquery.min.js             |     2 +
+ Navigate/Depth/gsvpanojs/test.html                 |    26 +
+ Navigate/Depth/gsvpanojs/test.py                   |   141 +
+ Navigate/Depth/gsvpanojs/zpipe.js                  | 13306 +++++++++++++++++++
+ Navigate/README.md                                 |    17 +
+ .../predict_bdd100k/bdd100k-models/.pylintrc       |   370 +
+ .../bdd100k-models/requirements.txt                |    12 +
+ .../bdd100k-models/sem_seg/README.md               |   604 +
+ .../bdd100k-models/sem_seg/__init__.py             |     1 +
+ .../sem_seg/configs/_base_/datasets/bdd100k.py     |    58 +
+ .../configs/_base_/datasets/bdd100k_512x1024.py    |    40 +
+ .../sem_seg/configs/_base_/default_runtime.py      |    15 +
+ .../configs/_base_/models/upernet_convnext.py      |    51 +
+ .../configs/_base_/schedules/schedule_40k.py       |     9 +
+ .../configs/_base_/schedules/schedule_80k.py       |     9 +
+ ...convnext-b_fp16_512x1024_80k_sem_seg_bdd100k.py |    20 +
+ ...convnext-s_fp16_512x1024_80k_sem_seg_bdd100k.py |    20 +
+ ...convnext-t_fp16_512x1024_40k_sem_seg_bdd100k.py |    55 +
+ ...convnext-t_fp16_512x1024_80k_sem_seg_bdd100k.py |    55 +
+ .../bdd100k-models/sem_seg/datasets/__init__.py    |     5 +
+ .../datasets/__pycache__/__init__.cpython-310.pyc  |   Bin 0 -> 306 bytes
+ .../datasets/__pycache__/bdd100k.cpython-310.pyc   |   Bin 0 -> 2556 bytes
+ .../bdd100k-models/sem_seg/datasets/bdd100k.py     |    96 +
+ .../bdd100k-models/sem_seg/setup.py                |    34 +
+ .../predict_bdd100k/bdd100k-models/sem_seg/test.py |   323 +
+ .../predict_bdd100k/bdd100k-models/sem_seg/vis.py  |   113 +
+ .../predict_bdd100k/bdd100k-models/setup.cfg       |   124 +
+ Navigate/Scenery/predict_bdd100k/cpu/ITWORKS1.py   |    47 +
+ Navigate/Scenery/predict_bdd100k/cpu/ITWORKS2.py   |   118 +
+ .../Scenery/predict_bdd100k/cpu/ITWORKSFULL.py     |    40 +
+ Navigate/Scenery/predict_bdd100k/cpu/README.md     |     1 +
+ Navigate/Scenery/predict_bdd100k/cpu/output.png    |   Bin 0 -> 294 bytes
+ Navigate/Scenery/predict_bdd100k/gpu/inference.py  |    47 +
+ Navigate/Scenery/sem_seg_values/colorkey.txt       |    21 +
+ Navigate/Scenery/sem_seg_values/fast1.py           |    32 +
+ Navigate/Scenery/sem_seg_values/fast2.py           |    32 +
+ Navigate/Scenery/sem_seg_values/fast3.py           |    32 +
+ Navigate/Scenery/sem_seg_values/fast4.py           |    32 +
+ Navigate/Scenery/sem_seg_values/fast5.py           |    32 +
+ Navigate/Scenery/sem_seg_values/fast6.py           |    32 +
+ Navigate/Scenery/sem_seg_values/fast7.py           |    32 +
+ Navigate/Scenery/sem_seg_values/fast8.py           |    32 +
+ Navigate/Scenery/sem_seg_values/slow.py            |    16 +
+ ...d SegmentationStreet View using Digital Map.pdf |   Bin 0 -> 2337745 bytes
+ Papers/3drecomstrictionmcavallo.pdf                |   Bin 0 -> 278792 bytes
+ Papers/Lecture1.pdf                                |   Bin 0 -> 473435 bytes
+ Papers/Lecture2.pdf                                |   Bin 0 -> 460578 bytes
+ Papers/Lecture3.pdf                                |   Bin 0 -> 535505 bytes
+ Papers/Lecture4.pdf                                |   Bin 0 -> 336115 bytes
+ Papers/Lecture5.pdf                                |   Bin 0 -> 350607 bytes
+ Papers/Lecture6.pdf                                |   Bin 0 -> 230468 bytes
+ Papers/Lecture7.pdf                                |   Bin 0 -> 298117 bytes
+ Papers/Percolation.pdf                             |   Bin 0 -> 2506153 bytes
+ ...zing_Traffic_Black_Spots_From_Street_View_I.pdf |   Bin 0 -> 2913765 bytes
+ Papers/Route Planning Book.pdf                     |   Bin 0 -> 3503106 bytes
+ Papers/intro_to_percolation.pdf                    |   Bin 0 -> 5147661 bytes
+ ...treetView_MinesParisTech-VeDeCom_ICARCV2016.pdf |   Bin 0 -> 28438897 bytes
+ Papers/percolation_book.pdf                        |   Bin 0 -> 20872590 bytes
+ Papers/percolation_book_errata.pdf                 |   Bin 0 -> 91513 bytes
+ Papers/percolation_chapman.pdf                     |   Bin 0 -> 375207 bytes
+ Papers/percolation_using_python.pdf                |   Bin 0 -> 11047877 bytes
+ Papers/percolation_veryveryshortintro.pdf          |   Bin 0 -> 4207450 bytes
+ Papers/runge2016.pdf                               |   Bin 0 -> 4807567 bytes
+ .../.ipynb_checkpoints/Visualize-checkpoint.ipynb  |     6 +
+ Pathfinder/Percolation/main.py                     |   525 +
+ ..._37.517932,-122.30976_37.449949,-122.260339.png |   Bin 0 -> 6344180 bytes
+ ..._37.517932,-122.30976_37.449949,-122.260339.png |   Bin 0 -> 6324423 bytes
+ Pathfinder/README.md                               |    22 +
+ Pathfinder/ShortestDistance/bench.png              |   Bin 0 -> 453988 bytes
+ Pathfinder/ShortestDistance/main.py                |   133 +
+ Pathfinder/ShortestDistance/results.prof           |   Bin 0 -> 135866 bytes
+ Pathfinder/garbage/Visualize.ipynb                 |    79 +
+ Pathfinder/garbage/cython_stuff.py                 |   102 +
+ Pathfinder/garbage/main.c                          |     7 +
+ Pathfinder/garbage/old.c                           |    13 +
+ Pathfinder/garbage/old.py                          |   101 +
+ Pathfinder/garbage/percolation.py                  |    31 +
+ Pathfinder/garbage/setup.py                        |     8 +
+ Pathfinder/garbage/test_waters.py                  |    10 +
+ Pathfinder/garbage/visualize.py                    |     6 +
+ README.md                                          |   126 +
+ requirements.txt                                   |     5 +
+ useful.txt                                         |     3 +
+ 110 files changed, 17773 insertions(+)

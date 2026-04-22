@@ -4,6 +4,26 @@ Created: May 17, 2022 10:29 PM
 
 Status: In Progress
 
+## Quick Start
+
+```bash
+# Install dependencies
+uv sync
+
+# Run with San Mateo County defaults
+uv run main.py
+
+# Custom start/end points
+uv run main.py --start 37.517932,-122.30976 --end 37.449949,-122.260339
+
+# Tweak parameters
+uv run main.py -e 0.3 -p 0.6 -n 15
+```
+
+### Prerequisites
+- Install `feh` for image viewing: `sudo apt install feh`
+- Extract road network data: `gunzip data/roadNet-CA.txt.gz` (if applicable)
+
 ## Goals
 
 - Navigate: Provide people a way to enjoy their routes through customizing their scenery. (point A to point B customization)
@@ -119,6 +139,11 @@ There are a couple of apps in the App Store which have some similarity to the go
 - Should we open source this project on Github and would that negatively impact our performance on the App Store?
 - <del>Is everyone really committed to this project, or is it "just for college applications"? (This project will fail if it's built on building self-worth).</del> It's just me now :)
 - <del>Will this app actually be useful to people?</del> (answered above in [Justification](#Justification))
+
+## Dev Notes
+
+- We should search for scenic nodes in the ellipse but still allow navigation to occur with any node.
+- Node demolition is slow because we delete a node then have to recheck all the other ones. Consider using pointers or a more efficient data structure.
 
 ## If we have time
 - Implement the above algorithms into an iOS app.

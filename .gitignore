@@ -1,5 +1,36 @@
+# Data - large files stored on Google Drive
+data/images/
+data/models/
+data/tiger/census/
+data/gsv_metadata/
 *.h5
 *.pth
-Data/
-Data/
-Data/
+*.pt
+*.gz
+
+# Generated output
+output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+
+# uv
+.python-version
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Profiling
+*.prof
